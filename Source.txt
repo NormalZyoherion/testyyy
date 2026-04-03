@@ -15121,12 +15121,12 @@ end
  
  TextClickButton.Name = "NamelessAdminButton"
  TextClickButton.Parent = ScreenGui
- TextClickButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ TextClickButton.BackgroundColor3 = Color3.fromRGB(141, 48, 75)
  TextClickButton.BackgroundTransparency = 1.000
  TextClickButton.Position = UDim2.new(0.418, 0,0, 0)
  TextClickButton.Size = UDim2.new(0, 2, 0, 33)
  TextClickButton.Font = Enum.Font.SourceSansBold
- TextClickButton.Text = "Nameless Admin " .. currentversion .. ""
+ TextClickButton.Text = "HourNight Admin " .. currentversion .. ""
  TextClickButton.TextColor3 = Color3.fromRGB(255, 255, 255)
  TextClickButton.TextSize = 20.000
  TextClickButton.TextWrapped = true
@@ -15144,7 +15144,7 @@ end
 	 textclickbutton:TweenSize(UDim2.new(0, 32, 0, 33), "Out", "Quint",1,true)
 	 textclickbutton:TweenPosition(UDim2.new(0.48909232, 0, 0, 0), "Out", "Quint",1,true)
 	 wait(0.4)
-	 textclickbutton.Text = "NA"
+	 textclickbutton.Text = "H"
 	 textclickbutton.Active = true
  gui.draggable(textclickbutton)
  end
