@@ -26,7 +26,7 @@ local Settings = ({
 	Prefix = (";"),
 	ChatPrefix = ("!"),
 	Seperator = (","),
-	Version = ("1.2"),
+	Version = ("1.0"),
 	CustomUI = (Cmd().CustomUI or "rbxassetid://127095266446147"),
 
 	Aliases = ({}),
@@ -3490,7 +3490,7 @@ Command.Add({
 					if Toggle then
 						API:Notify({
 							Title = "Success",
-							Description = "Now everytime you run Cmd other admin prompts wont interfere",
+							Description = "Now everytime you run Kyoto Admin other admin prompts wont interfere",
 							Mode = "Success",
 							Duration = 5,
 						})
