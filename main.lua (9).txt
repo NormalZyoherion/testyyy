@@ -41,7 +41,7 @@ local Settings = ({
 	}),
 
 	Theme = ({
-		Mode = "Dark",
+		Mode = "Kyoto",
 		Transparency = 0,
 
 		-- Frames:
@@ -2928,7 +2928,7 @@ Command.Run = function(IgnoreNotifications, Name, Callbacks)
 					})
 				end
 			end, function(Result)
-				Output(Format("[CMD ERROR] : Error occured trying to run the command - %s\nERROR: %s\n%s", Name, Result, debug.traceback()))
+				Output(Format("[Kyoto ERROR] : Error occured trying to run the command - %s\nERROR: %s\n%s", Name, Result, debug.traceback()))
 			end)
 		elseif (Name ~= Blank) then
 			API:Notify({
@@ -3232,7 +3232,7 @@ function Feature:AddWaypoint(Name, CFrame)
 	else
 		API:Notify({
 			Title = "Waypoints",
-			Description = "Error adding waypoint, is one of the arguments missing?",
+			Description = "Kyoto: Error adding waypoint, is one of the arguments missing?",
 			Type = "Error",
 			Duration = 15,
 		})
@@ -3256,7 +3256,7 @@ function Feature:AddEvent(Event, Command)
 	else
 		API:Notify({
 			Title = "Events",
-			Description = "Error adding an event, event doesn't exist or command already added in the event.",
+			Description = "Kyoto: Error adding an event, event doesn't exist or command already added in the event.",
 			Type = "Error",
 			Duration = 15,
 		})
@@ -3336,13 +3336,13 @@ Command.Add({
 
 			Window:AddTab({
 				Title = "About",
-				Description = "List of credits & information about Cmd",
+				Description = "List of credits & information about Kyoto",
 				Tab = "Home",
 			})
 
 			Window:AddTab({
 				Title = "Prefixes",
-				Description = "Change the prefixes of Cmd",
+				Description = "Change the prefixes of Kyoto",
 				Tab = "Home",
 			})
 
@@ -3354,7 +3354,7 @@ Command.Add({
 
 			Window:AddTab({
 				Title = "Theme",
-				Description = "Customize the look of Cmd",
+				Description = "Customize the look of Kyoto",
 				Tab = "Home",
 			})
 
@@ -3403,7 +3403,7 @@ Command.Add({
 				Tab = "About",
 			})
 
-			Window:AddSection({ Title = "Cmd", Tab = "About" })
+			Window:AddSection({ Title = "Kyoto", Tab = "About" })
 
 			Window:AddParagraph({
 				Title = "Version",
@@ -3419,7 +3419,7 @@ Command.Add({
 
 			Window:AddParagraph({
 				Title = "Invite",
-				Description = "https://discord.gg/pBDqEj4BSP",
+				Description = "https://discord.gg/",
 				Tab = "About",
 			})
 
